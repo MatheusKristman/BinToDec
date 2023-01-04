@@ -191,6 +191,11 @@ body {
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .hero__container .hero-wrapper .binary-wrapper .binary-btn {
+    cursor: pointer;
+  }
+}
 .hero__container .hero-wrapper .error {
   width: 100%;
   color: rgb(218, 50, 50);

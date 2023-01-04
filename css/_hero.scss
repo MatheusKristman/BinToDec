@@ -96,6 +96,10 @@
           @include breakpoint(tablet) {
             font-size: 1rem;
           }
+
+          @include breakpoint(largeScreen) {
+            cursor: pointer;
+          }
         }
       }
 
