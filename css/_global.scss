@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $openSans;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #FAF8F1;
+}
+
+.wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include breakpoint(tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include breakpoint(largeScreen) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  @include breakpoint(extraLargeScreen) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}

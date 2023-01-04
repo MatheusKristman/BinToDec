@@ -1,0 +1,110 @@
+.hero {
+  height: calc(100vh - 73px);
+
+  @include breakpoint(tablet) {
+    height: calc(100vh - 105px);
+  }
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-wrapper {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include breakpoint(tablet) {
+        width: 100%;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        color: #C58940;
+        margin-bottom: 35px;
+
+        @include breakpoint(smallScreen) {
+          font-size: 2.5rem;
+        }
+      }
+
+      .result-box {
+        border: 2px solid #C58940;
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        max-width: 500px;
+
+        @include breakpoint(tablet) {
+          height: 200px;
+        }
+
+        span {
+          font-size: 2.5rem;
+          font-weight: 600;
+          color: #C58940;
+
+          @include breakpoint(tablet) {
+            font-size: 4rem;
+          }
+        }
+      }
+
+      .binary-wrapper {
+        width: 100%;
+        height: 35px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr;
+        margin-bottom: 5px;
+        max-width: 500px;
+
+        .binary-input {
+          font-size: 1rem;
+          padding: 0 10px 0 10px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border: 2px solid #C58940;
+          background-color: transparent;
+          color: #C58940;
+          outline: none;
+        }
+
+        .binary-btn {
+          font-size: 0.85rem;
+          font-weight: 600;
+          background-color: #C58940;
+          color: #FAF8F1;
+          border: 2px solid #C58940;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+
+          @include breakpoint(tablet) {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .error {
+        width: 100%;
+        color: rgb(218, 50, 50);
+
+        max-width: 500px;
+      }
+    }
+  }
+}
